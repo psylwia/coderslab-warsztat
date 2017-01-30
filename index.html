@@ -10,43 +10,119 @@
     
     <header>
         <div class="container clearfix">
-            <h1 id="logo">Logo</h1>
+            <div id="logo_menu">Sit <span class="text_color">on </span>chair</div>
             <nav>
-            <ul id="menu">
-                <li>Start</li>
-                <li>O nas</li>
-                <li>Kontakt</li>
+            <ul class="menu">
+                <li><a href="">O FIRMIE</a>
+                    <ul class='submenu'>
+                        <li><a href="">Aktualności</a>
+                        <li><a href="">Nasz team</a>
+                        <li><a href="">Historia</a>
+                    </ul>
+                </li>             
+                <li><a href="">GALERIA</a></li>
+                <li><a href="">KONTAKT</a></li>
             </ul>
             </nav>
         </div>
         
     </header>
     
-    <section>
+ 
+    <section class="section1"> 
         <div class="container clearfix">
-           <div class="col6 col6_image">
-                    <img src="" id="main_photo">
-            </div>
-                
-            <div class="col6 col6_main">
-                <h1>Tytuł strony</h1><article class="main_article">Cake wafer cupcake cupcake carrot cake jujubes chocolate bar powder. Wafer chocolate tart jelly-o. Apple pie ice cream dragée carrot cake. Brownie bear claw cake dragée soufflé chocolate caramels danish. Danish carrot cake wafer muffin cookie powder pudding tiramisu apple pie. Danish sugar plum candy cotton candy soufflé jelly-o.Cake wafer cupcake cupcake carrot cake jujubes chocolate bar powder. Wafer chocolate tart jelly-o. Apple pie ice cream dragée carrot cake. Brownie bear claw cake dragée soufflé chocolate caramels danish. Danish carrot cake wafer muffin cookie powder pudding tiramisu apple pie. Danish sugar plum candy cotton candy soufflé jelly-o.</article>
-            </div>
-            </div>
+                <div class="arrow lesser">&lt;</div>
+                <div class="slider">
+                <div class="chair_photo"><img src="images/black_chair.png"></div>
+                <div class="chair_text">
+                    <h1>Sit <span class="text_color">on </span> our <span class="text_color">chair</span></h1>
+                    <p class="p_section1">Fruitcake jelly beans marzipan carrot cake muffin. Sweet wafer cheesecake sesame snaps halvah jelly jelly-o cookie oat cake wafer cheesecake sesame snaps. </p>
+                    <a class="button">Zobacz więcej</a>
+                </div>
+                <div class="arrow greater">&gt;</div>
+                </div>   
+        </div>
     </section>
     
-    <section class="photos">
+    <section class="photos section2">
         <div class="container clearfix">
-            <div class="photo" id="first_photo"></div><!--
-            --><div class="photo" id="second_photo"></div><!--
-            --><div class="photo" id="third_photo"></div>
+          <div class="photos_small">  
+            <div class="photo" id="first_photo"><div class="transparent_box"><h2>Chair CLAIR</h2><hr></div></div><!--
+--><div class="photo" id="second_photo"><div class="transparent_box"><h2>Chair MARGARITA</h2><hr></div></div><!--
+--><div class="photo" id="third_photo"><h2>Finds all inputs</h2><hr><br><p class="p_third_photo">Fruitcake jelly beans marzipan carrot cake muffin. Sweet wafer cheesecake sesame snaps halvah jelly jelly-o cookie oat cake wafer cheesecake sesame snaps.<br><br> Sweet wafer cheesecake sesame snaps halvah jelly sesame snaps.</p></div>
          </div>
+        </div>
+    </section>
     
+    <section class='section3'>
+        <div class="container clearfix">
+            <div class="cennik">Cennik<hr id="hr1"></div>
+            <div class="plan" id="basic_plan"><span class="circle"></span><span class="dot"></span>
+                <h2>Basic plan</h2>
+                <div class="price_circle">85<sup>99<br>PLN/MSC</sup></div>
+                <div class="info1">Zakup towaru + dowóz</div>
+                <div class="info2">Serwis</div>
+                <a class="button button_cennik" href="">Dołącz</a>
+            </div><!-- --><div class="plan" id="standard_plan"><span class="circle"></span><span class="dot"></span>
+                <h2>Standard plan</h2>
+                <div class="price_circle">95<sup>99<br>PLN/MSC</sup></div>
+                <div class="info1">Zakup towaru + dowóz</div>
+                <div class="info2">Serwis</div>
+                <div class="info1 info3">Gwarancja 5 lat</div>
+                <a class="button button_cennik" href="">Dołącz</a></div><!-- --><div class="plan" id="advance_plan"><span class="circle"></span><span class="dot"></span>
+                <h2>Advance plan</h2>
+                <div class="price_circle">211<sup>00<br>PLN/MSC</sup></div>
+                <div class="info1">Zakup towaru + dowóz</div>
+                <div class="info2">Serwis</div>
+                <div class="info1 info3">Gwarancja 6 lat</div>
+                <div class="info2 info4">Porady projektanta</div>
+                <a class="button button_cennik" href="">Dołącz</a></div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container clearfix">
+            <div class="contact">Kontakt<hr id="hr1"></div>
+            <form>
+                <fieldset>
+                    <div class="contact_left">
+                        <div>
+                            <input type='text' name='imie' placeholder="Imię" id="form-first-name">
+                        </div>
+                        <div>
+                            <input type="email" name="email" placeholder="Email" class="field" id="form-email">
+                        </div>
+                        <div>
+                            <textarea cols="45" rows="5" name="wiadomosc" placeholder="Wiadomość" id="form-info"></textarea>
+                        </div>
+                    </div>
+                <div class="contact_right">
+                    <img id="chair2" src="images/red_chair.png">
+                    <div><input type="checkbox" name="dane_osobowe" id="dane_osobowe"><label for="dane_osobowe" class="dane">Zgadzam się na przetwarzanie danych osobowych</label></div>
+                    <div>
+                        <input type="submit" class="button" id="button_form" value="Wyślij">
+                    </div>
+                </div>
+        </fieldset>
+            </form>
+        </div>
     </section>
     
     <footer>
         <div class="container clearfix">
-            <h4>&copy; Coder's Lab 2016</h4>
-            <h6>Logo</h6>
+            <div class='copyright'>
+                <h6>Copyright 2014 | All Rights Reserved - Sit On Chair</h6>
+            </div>
+          
+            <div class='icons'>
+                <img src="images/flickr.png" class='icon'>
+                <img src="images/vimeo.png" class='icon'>
+                <img src="images/pinterest.png" class='icon'>
+                <img src="images/twitter.png" class='icon'>
+            </div>
+              <div class="footer_logo">
+                <h6>SIT <span id="footer_text_logo">ON</span> CHAIR</h6>
+            </div>
         </div>
     </footer>
 </body>
