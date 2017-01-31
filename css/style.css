@@ -40,13 +40,13 @@ header {
 }
 .menu {
     float: right;
-    padding: 0 15px; 
 }
 
 ul li {
     display: inline-block;
     position: relative;
-    margin: 10px;
+    margin-top: 8px;
+    margin-left: 15px;
     padding: 0 6px 15px;
 }
 ul ul {
@@ -77,13 +77,13 @@ li:hover ul {
     background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(221,221,221,1) 100%);
 }
 
-.photos_small {
-    width: 100%;
-}
+
 .chair_photo {
     float: left;
-    width: 40%;
+    width: 45%;
     display: inline-block;
+    margin: 5px auto;
+    height: 337px;
 }
 
 .p_section1 {
@@ -104,6 +104,7 @@ li:hover ul {
     font-size: 60px;
     padding-top: 12%;
     font-family: raleway_light;
+    
 }
 
 .lesser {
@@ -113,7 +114,7 @@ li:hover ul {
 
 .greater {
     width: 5%;
-    float: right;
+    float: left;
     text-align: right;
 }
 
@@ -127,12 +128,32 @@ li:hover ul {
     text-transform: uppercase;
     padding: 10px;
 }
+.slider button {
+    border: 0;
+    background: transparent;
+}
+
+.slider ul{
+    list-style: none;
+
+}
+
+.slider li{
+    display: none;
+}
+
+.slider .visible{
+    display: inline-block;
+}
 
 /*Section 2*/
 .photo {
     float: left;
     margin: 35px 0;
     position: relative;
+}
+.photos_small {
+    width: 100%;
 }
 #first_photo {
     background-image: url(../images/box1_img.jpg);
