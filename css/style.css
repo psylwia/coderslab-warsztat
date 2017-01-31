@@ -146,6 +146,7 @@ li:hover ul {
     background-image: url(../images/box2_img.jpg);
     height: 225px;
     width: 329px;
+    margin-right: 45px;
 
 
 }
@@ -155,7 +156,7 @@ li:hover ul {
     width: 329px;
     border: 1px solid black;
     padding: 25px;
-    float: right;
+    float: left;
 
 }
 
@@ -301,6 +302,38 @@ h2 {
     width: 120px;
     height: 30px;
     padding: 7px;
+}
+
+.plan:hover {
+    background: #27C9AB;
+    border: 2px solid #27C9AB;
+}
+
+.plan:hover h2{
+    color: #fff;
+}
+
+.plan:hover .info1 {
+    background: #fff;
+}
+
+.plan:hover .button_cennik {
+    color: #27C9AB;
+    background: #fff;
+}
+
+.plan:hover .price_circle {
+    color: #27C9AB;
+}
+
+.plan:hover .dot{
+    background: #fff;
+    border: 1px solid #fff;
+}
+
+.plan:hover .circle{
+    background: #27C9AB;
+    border: 1px solid #27C9AB;
 }
 
 /*Section 3 - Kontakt */
