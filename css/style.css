@@ -1,38 +1,4 @@
-@font-face {
-    font-family: 'raleway';
-    src: url('../fonts/raleway-regular.woff2') format('woff2'),
-         url('../fonts/raleway-regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'raleway_bold';
-    src: url('../fonts/raleway-bold.woff2') format('woff2'),
-         url('../fonts/raleway-bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'raleway_bolder';
-    src: url('../fonts/raleway-extrabold.woff2') format('woff2'),
-         url('../fonts/raleway-extrabold.woff') format('woff');
-    font-weight: bolder;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'raleway_light';
-    src: url('../fonts/raleway-light.woff2') format('woff2'),
-         url('../fonts/raleway-light.woff') format('woff');
-    font-weight: lighter;
-    font-style: normal;
-
-}
+@import "fonts.css";
 
 body {
     font-family: raleway, raleway_bold, raleway_bolder, raleway_light, Arial, sans-serif;
@@ -327,6 +293,7 @@ h2 {
 .info4 {
   margin-top: 86%;  
 }
+
 .button_cennik {
     margin-top: 105%;
     position: absolute;
@@ -350,31 +317,31 @@ input, textarea {
     border: 1px solid #27C9AB;
 }
 
-input:focus {
-    outline: 0;
-    box-shadow: 0 0 5px 0 grey inset;
+input[type=checkbox] {
+    display: none;
 }
 
-input[type="checkbox"] {
+input[type=checkbox] + label span.tick {
+    display: table-cell;
     width: 30px;
     height: 30px;
-    display: inline-block;
-    vertical-align: top;
-        background-image: url(../images/form_ok.jpg);
+    vertical-align: bottom;
+    background: #fff;
+    border: 1px solid #27C9AB;
 }
 
-input[type="checkbox"]:checked {
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    vertical-align: top;
-
+input[type=checkbox]:checked + label span.tick {
+    background-image: url('../images/form_ok.jpg');
+    background-size: 28px;
+    background-position: 0px 3px;
+    background-repeat: no-repeat;
 }
 
 .dane {
     width: 250px;
     padding-left: 5px;
     display: inline-block;
+    color: #8e8e8e;
 }
 
 .contact_left {
@@ -404,7 +371,7 @@ input[type="checkbox"]:checked {
     font-size: 22px;
     font-family: raleway_bold;
     padding: 3px;
-    margin: 5px;
+    margin: 25px 0;
 }
 
 /*Footer*/
